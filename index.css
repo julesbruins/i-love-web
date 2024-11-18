@@ -1,0 +1,8 @@
+@font-face {
+    font-family: own;
+    src: url(assets/own-font-Regular.otf);
+}
+
+body {
+    font-family: "own";
+}
