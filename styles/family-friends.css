@@ -1,0 +1,12 @@
+body {
+    margin: 0 auto;
+}
+
+img {
+    width: 20em;
+
+}
+
+img:hover {
+    content: url(../assets/photo-luna-color.jpg);
+}
