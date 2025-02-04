@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "typewriter";
+    src: url(../fonts/AmericanTypewriter.ttc);
+}
+
+@font-face {
+    font-family: "calligraphy";
+    src: url(../fonts/CollectionNewStyle.otf);
+}
+
+@font-face {
+    font-family: "own-writing";
+    src: url(../fonts/Handwriting-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* CUSTOM PROPERTIES */
+    --primary-font: "typewriter";
+    --secondary-font: "calligraphy";
+    --tertiary-font: "own-writing";
+
+    /* BACKGROUND */
+    --pattern-bg: #F2F2F2;
+    --pattern-color: rgba(0, 0, 0, 0.2);
+    --dot-size: 1.5px;
+    --dot-space: 22px;
+
+    background:
+        linear-gradient(90deg, var(--pattern-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--pattern-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--pattern-color);
+}
+
+h1, h2 {
+    font-family: var(--secondary-font);
+    font-weight: 250;
+}
+
+h1 {
+    font-size: 7rem;
+}
+h2 {
+    font-size: 5rem;
+}
+
+p {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+}
+
+.text-link {
+    font-style: italic;
+    text-decoration: underline;
+    color: currentColor;
+
+    &:hover {
+        color: orange;
+    }
+}
