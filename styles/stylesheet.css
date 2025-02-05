@@ -27,9 +27,12 @@ body {
 
     /* BACKGROUND */
     --pattern-bg: #F2F2F2;
-    --pattern-color: rgba(0, 0, 0, 0.2);
+    --pattern-color: rgba(0, 0, 0, 0.4);
     --dot-size: 1.5px;
     --dot-space: 22px;
+
+    /* OTHER */
+    --border: 2px solid #59331D;
 
     background:
         linear-gradient(90deg, var(--pattern-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),

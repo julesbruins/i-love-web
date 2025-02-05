@@ -22,7 +22,8 @@ header {
     img.bottom-corner {
         height: 18em;
         float: right;
-        border: 2px solid #59331D;
+        border: var(--border);
         border-radius: 200px 200px 0 0;
+        margin: .5rem;
     }
 }
