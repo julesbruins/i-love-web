@@ -15,10 +15,15 @@ header {
     } */
 .positioning {
     position: absolute;
-        img {
-            width: 20em;
-            border: var(--border);
-            border-radius: 15px;
+    img {
+        width: 20em;
+        border: var(--border);
+        border-radius: 15px;
+        
+        &:hover {
+                transition:.2s;
+                transform: scale(1.1);
+            }
         }
 }
 
@@ -29,11 +34,12 @@ header {
         content: url(../assets/photo-brother-color.png);
     }
 }
+
 .noelle {
     top: 12em;
     left: 24em;
     &:hover img {
-        content: url(../assets/photo-noelle-color.png);
+        content: url(../assets/photo-no-color.jpg);
     }
 }
 .family {

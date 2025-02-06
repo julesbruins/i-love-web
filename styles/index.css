@@ -27,3 +27,37 @@ header {
         margin: .5rem;
     }
 }
+
+.explanation {
+
+}
+
+.portfolio {
+    padding-left: 1rem;
+
+    .btn-link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-decoration: none;
+
+        border-radius: 50px;
+        width: fit-content;
+        padding: .5rem 1.5rem;
+
+        span {
+            font-family: var(--primary-font);
+            color: black;
+        }
+        img {
+            height: 2rem;
+        }
+        img:last-child {
+            border-radius: 20px;
+        }
+
+        .btn-link span:hover {
+            color: orange;
+        }
+    }
+}
