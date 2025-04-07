@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "liquid": "^5.1.1",
+    "liquidjs": "^10.21.0"
+  }
+}
