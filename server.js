@@ -36,7 +36,7 @@ app.set('views', './views')
 
 
 app.get('/', function (request, response) {
-    response.render('home.liquid')
+    response.render('index.html')
 })
 
 app.get('/family-friends', function (request, response) {

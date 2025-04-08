@@ -1,7 +1,29 @@
 {
+  "name": "i-love-web",
+  "version": "1.0.0",
+  "description": "Mijn i-love-web website voor FDND",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julesbruins/i-love-web.git"
+  },
+  "author": "Jules Bruins",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/julesbruins/i-love-web/issues"
+  },
+  "homepage": "https://github.com/julesbruins/i-love-web#readme",
   "dependencies": {
     "express": "^5.1.0",
-    "liquid": "^5.1.1",
-    "liquidjs": "^10.21.0"
+    "gray-matter": "^4.0.3",
+    "liquidjs": "^10.21.0",
+    "marked": "^15.0.8"
   }
 }
