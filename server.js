@@ -18,7 +18,7 @@ app.engine('liquid', engine.express());
 
 // markdowns opvragen
 const files = await readdir('markdowns')
-    console.log('files')
+    console.log(files)
 
 // Gebruik de map 'public' voor statische bestanden (resources zoals CSS, JavaScript, afbeeldingen en fonts)
 // Bestanden in deze map kunnen dus door de browser gebruikt worden
@@ -39,7 +39,7 @@ app.get('/', function (request, response) {
     response.render('home.liquid')
 })
 
-app.get('/family-friends', function (request, response) {
+app.get('/about', function (request, response) {
     response.render('about.liquid')
 })
 
