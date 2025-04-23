@@ -17,6 +17,9 @@ app.engine('liquid', engine.express());
 
 
 // markdowns opvragen
+import { marked } from 'marked'
+const markedUp = marked.parse(fileContents)
+
 const files = await readdir('markdowns')
     console.log(files)
 
