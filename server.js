@@ -17,11 +17,11 @@ app.engine('liquid', engine.express());
 
 
 // markdowns opvragen
-import { marked } from 'marked'
-const markedUp = marked.parse(fileContents)
+// import { marked } from 'marked'
+// const markedUp = marked.parse(fileContents)
 
-const files = await readdir('markdowns')
-    console.log(files)
+// const files = await readdir('markdowns')
+//     console.log(files)
 
 // Gebruik de map 'public' voor statische bestanden (resources zoals CSS, JavaScript, afbeeldingen en fonts)
 // Bestanden in deze map kunnen dus door de browser gebruikt worden
@@ -46,13 +46,14 @@ app.get('/about', function (request, response) {
     response.render('about.liquid')
 })
 
+app.get('/portfolio', function (request, response) {
+    response.render('portfolio.liquid')
+})
+
 app.get('/learning-journal', function (request, response) {
     response.render('learningjournal.liquid', {files: files})
 })
 
-app.get('/portfolio', function (request, response) {
-    response.render('portfolio.liquid')
-})
 
 // Stel het poortnummer in waar Express op moet gaan luisteren
 // Lokaal is dit poort 8000, als dit ergens gehost wordt, is het waarschijnlijk poort 80

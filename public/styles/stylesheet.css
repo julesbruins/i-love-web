@@ -1,17 +1,20 @@
 @font-face {
-    font-family: "typewriter";
-    src: url(../fonts/AmericanTypewriter.ttc);
+    font-family: "coolvetica regular";
+    src: url(../assets/fonts/coolvetica-regular.woff2) format(woff2);
 }
 
 @font-face {
-    font-family: "calligraphy";
-    src: url(../fonts/CollectionNewStyle.otf);
+    font-family: "raleway regular";
+    src: url(../assets/fonts/Raleway-Regular.woff2) format(woff2);
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: "own-writing";
-    src: url(../fonts/Handwriting-Regular.ttf);
+    font-family: "raleway bold";
+    src: url(../assets/fonts/Raleway-Bold.woff2) format(woff2);
+    font-weight: 700;
 }
+
 
 * {
     margin: 0;
@@ -21,48 +24,49 @@
 
 body {
     /* CUSTOM PROPERTIES */
-    --primary-font: "typewriter";
-    --secondary-font: "calligraphy";
-    --tertiary-font: "own-writing";
+    --primary-font: "coolvetica regular";
+    --secondary-font: "raleway regular";
+    --tertiary-font: "raleway bold";
 
-    /* BACKGROUND */
-    --pattern-bg: #F2F2F2;
-    --pattern-color: rgba(0, 0, 0, 0.4);
-    --dot-size: 1.5px;
-    --dot-space: 22px;
+    --background-color: rgb(16, 16, 16);
+    --text-color: rgb(247, 247, 247);
 
-    /* OTHER */
-    --border: 2px solid #59331D;
+    --border-radius: 1.5rem;
 
-    background:
-        linear-gradient(90deg, var(--pattern-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-        linear-gradient(var(--pattern-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-        var(--pattern-color);
+    background-color: var(--background-color);
+    
+}
+
+h1,
+h2, 
+p,
+a {
+    color: var(--text-color);
 }
 
 h1, h2 {
-    font-family: var(--secondary-font);
-    font-weight: 250;
-}
-
-h1 {
-    font-size: 7rem;
-}
-h2 {
-    font-size: 5rem;
-}
-
-p {
     font-family: var(--primary-font);
+}
+
+h1,
+.xl {
+    font-size: clamp(3rem, 6vw, 3.5rem);
+}
+h2,
+.lg {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+}
+p {
+
+}
+
+p,
+a {
+    font-family: var(--tertiary-font);
+    font-style: italic;
     font-size: 1rem;
 }
 
-.text-link {
-    font-style: italic;
-    text-decoration: underline;
-    color: currentColor;
-
-    &:hover {
-        color: orange;
-    }
+a {
+    text-decoration: none;
 }

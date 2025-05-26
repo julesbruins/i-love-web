@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+main.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* border: 2px solid #333; */
+    padding: 1rem;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+main.horizontal-scroll article {
+    flex: 0 0 300px;
+    margin-right: 1rem;
+    background: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+.scroll-btn {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+  .scroll-btn.left {
+    left: 10px;
+  }
+
+  .scroll-btn.right {
+    right: 10px;
+  }
+
+  /* Knoppen verbergen/tonen */
+  .scroll-btn.hidden {
+    display: none;
+  }
+
+  .horizontal-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

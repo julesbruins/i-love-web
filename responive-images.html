@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive images</title>
+</head>
+<body>
+    
+    <picture>
+        <source type="image/avif" srcset="./public/assets/photo-no-color.avif"  media="(min-width: 900px)">
+        <source type="image/avif" srcset="./public/assets/photo-brother-color.avif"  media="(min-width: 700px)">
+        <source media="(orientation: portrait)" type="image/avif" srcset="./public/assets/photo-fam-color.avif"  media="(min-width: 500px)">
+        <img src="./public/assets/photo-no-color.jpg" alt="" width="300" height="400" decoding="async">
+    </picture>
+
+</body>
+</html>
