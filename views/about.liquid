@@ -7,15 +7,20 @@
     <p>the life behind the developer</p>
 </header>
 
-<iframe src="https://user-experience-enhanced-website-pvnn.onrender.com/" frameborder="1"></iframe>
+
 
 <main>
-    <p>My name is Jules Bruins. Born and raised in Apeldoorn and now 19 years ol. I managed to get my VWO diploma in 2024.</p> 
-    <p>I’ve been working since I was 14 years old. I started then at a flower shop where I still work. In between, I also gained 1,5 years of hospitality experience. I am someone who likes to work and is very creative. Thus, when I was only 12, I already made cards and other creative crafts and sold these.</p> 
-    <p>I am now studying “frontend design & development” at the Hogeschool van Amsterdam. A 2-year associate degree. I started with a knowledge of 0, but I have already made many steps. Curious? Check out my portfolio!</p>
+    <p class="long-text">My name is Jules Bruins. Born and raised in Apeldoorn and now 19 years ol. I managed to get my VWO diploma in 2024.</p> 
+    <p class="long-text"> I’ve been working since I was 14 years old. I started then at a flower shop where I still work. In between, I also gained 1,5 years of hospitality experience. I am someone who likes to work and is very creative. Thus, when I was only 12, I already made cards and other creative crafts and sold these.</p> 
+    <p class="long-text">I am now studying “frontend design & development” at the Hogeschool van Amsterdam. A 2-year associate degree. I started with a knowledge of 0, but I have already made many steps. Curious? Check out my portfolio!</p>
 
-    <img src="" alt="">
-    <img src="" alt="">
+    <picture>
+        <source type="image/avif" srcset="/assets/images/slagen.avif" alt="Jules met VWO diploma" height="3024" width="2523">
+        <source type="image/webp" srcset="/assets/images/slagen.webp" alt="Jules met VWO diploma" height="3024" width="2523">
+        <img src="/assets/images/slagen.png" alt="Jules met VWO diploma" height="3024" width="2523">
+    </picture>
+    
+
 </main>
 
 {% render 'partials/foot.liquid' %}

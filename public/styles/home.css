@@ -9,18 +9,36 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    nav {
+      text-align: start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        list-style-type: none;
+      }
+
+      a {
+        transition: .3s ease;
+      }
+      a:hover {
+        color: #b29be0;
+      }
+    }
 }
 
 img {
   width: 100%;
-  height: 50%;
+  height: 24vh;
   padding: 1rem;
   border-radius: var(--border-radius);
   object-fit: cover;
   
-  :nth-of-type {
+  &:nth-of-type(1) {
     object-position: 0% 65%;
-
   }
 }
 
@@ -47,4 +65,7 @@ img {
 
 .header.nav-visible .scroll-up {
   transform: translateY(-2rem);
+}
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }

@@ -1,8 +1,17 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
+iframe {
+    opacity: 0.2;
+    transition: .3s;
 
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* MARK: scroll bar
+ */
 main.horizontal-scroll {
     display: flex;
     overflow-x: auto;
@@ -16,7 +25,6 @@ main.horizontal-scroll {
 main.horizontal-scroll article {
     flex: 0 0 300px;
     margin-right: 1rem;
-    background: #f0f0f0;
     padding: 1rem;
     border-radius: 8px;
     box-sizing: border-box;
@@ -50,6 +58,6 @@ main.horizontal-scroll article {
     display: none;
   }
 
-  .horizontal-scroll::-webkit-scrollbar {
+.horizontal-scroll::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }

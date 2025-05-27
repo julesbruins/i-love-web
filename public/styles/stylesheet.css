@@ -56,8 +56,9 @@ h2,
 .lg {
     font-size: clamp(2rem, 5vw, 2.5rem);
 }
-p {
-
+p.long-text {
+    font-family: var(--secondary-font);
+    font-style: normal;
 }
 
 p,
@@ -69,4 +70,8 @@ a {
 
 a {
     text-decoration: none;
+}
+
+img {
+    border-radius: var(--border-radius);
 }
