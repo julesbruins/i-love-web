@@ -53,6 +53,9 @@ app.get('/portfolio', function (request, response) {
 app.get('/learning-journal', function (request, response) {
     response.render('learningjournal.liquid', {files: files})
 })
+app.get('/test', function (request, response) {
+    response.render('test.liquid')
+})
 
 
 // Stel het poortnummer in waar Express op moet gaan luisteren
