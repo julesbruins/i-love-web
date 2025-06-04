@@ -1,0 +1,99 @@
+{% render 'partials/head.liquid', title: 'portfolio - DDA' %}
+
+<link rel="stylesheet" href="/styles/bussiness.css">
+
+<div class="gradient-ellipse-1"></div>
+<div class="gradient-ellipse-2"></div>
+<div class="gradient-ellipse-3"></div>
+
+<header>
+    <h1>DDA agency</h1>
+    <p>Hier vind je onder andere het responsive design van de website van dda. We hebben onder andere gewerkt aan het toevoegen van filter knoppen en dingen als feedback en feedforward. Er staan links naar verschillende Read.me's met uitgebreide uitleggen over het hele proces van het maken van de website en wat uitblinkt aan de website. Ook vind je hier een demo en de live link.</p>
+    <a href="https://julesbruins.github.io/fix-the-flow-interactive-website/">link naar live site</a>
+    <a href="https://github.com/julesbruins/fix-the-flow-interactive-website?tab=readme-ov-file#animatie--interactie-op-de-site">Read.me #4</a>
+    <a href="https://github.com/julesbruins/look-and-feel-corporate-identity?tab=readme-ov-file#look-and-feel-corporate-identity---sprint-4">Read.me #3</a>
+    <a href="https://github.com/julesbruins/all-human-accessible-website?tab=readme-ov-file#accessible-website">Read.me #2</a>
+    <a href="https://github.com/julesbruins/the-client-website?tab=readme-ov-file#the-client---website">Read.me #1</a>
+</header>
+
+<main>
+    <section class="demos">
+        <h2>demo van de site</h2>
+        
+        <div class="flex-demos">
+            <video controls height="350">
+                <source src="/assets/videos/dda-video-MF.mp4" type="video/mp4" />
+            </video>
+            
+            <video controls height="350">
+                <source src="/assets/videos/dda-video-L.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </section>
+
+    <section class="responsive">
+    <h2>responsive ontwerp (home pagina)</h2>
+    
+        <div class="flex-responsive">
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/dda-home-MF.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/dda-home-MF.webp">
+                    <img src="/assets/images/portfolio/dda-home-MF.png" alt="">
+                </picture>
+                <p>small</p>
+            </div>
+
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/dda-home-M.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/dda-home-M.webp">
+                    <img src="/assets/images/portfolio/dda-home-M.png" alt="">
+                    <p>medium</p>
+                </picture>
+            </div>
+
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/dda-home-L.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/dda-home-L.webp">
+                    <img src="/assets/images/portfolio/dda-home-L.png" alt="">
+                </picture>
+                <p>large</p>
+            </div>
+        </div>
+
+    <h2>responsive ontwerp (detail pagina)</h2>    
+        <div class="flex-responsive">
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/dda-details-MF.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/dda-details-MF.webp">
+                    <img src="/assets/images/portfolio/dda-details-MF.png" alt="">
+                </picture>
+                <p>small</p>
+            </div>
+
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/dda-details-M.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/dda-details-M.webp">
+                    <img src="/assets/images/portfolio/dda-details-M.png" alt="">
+                    <p>medium</p>
+                </picture>
+            </div>
+
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/dda-details-L.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/dda-details-L.webp">
+                    <img src="/assets/images/portfolio/dda-details-L.png" alt="">
+                </picture>
+                <p>large</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% render 'partials/foot.liquid' %}

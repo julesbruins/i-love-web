@@ -1,6 +1,6 @@
 // Importeer het npm package Express (uit de door npm aangemaakte node_modules map)
 // Deze package is geïnstalleerd via `npm install`, en staat als 'dependency' in package.json
-import express from 'express'
+import express, { response } from 'express'
 // Importeer de Liquid package (ook als dependency via npm geïnstalleerd)
 import { Liquid } from 'liquidjs';
 
@@ -46,8 +46,28 @@ app.get('/about', function (request, response) {
     response.render('about.liquid')
 })
 
+// PORTFOLIO
 app.get('/portfolio', function (request, response) {
     response.render('portfolio.liquid')
+})
+app.get('/portfolio/drukwerkdeal', function (request, response) {
+    response.render('drukwerkdeal.liquid')
+})
+app.get('/portfolio/dda-agency', function (request, response) {
+    response.render('dda.liquid')
+})
+app.get('/portfolio/drop-heal-UE', function (request, response) {
+    response.render('d&h-UE.liquid')
+})
+app.get('/portfolio/drop-heal-PUI', function (request, response) {
+    response.render('d&h-PUI.liquid')
+})
+
+
+
+// OFFLINE
+app.get('/portfolio2', function (request, response) {
+    response.render('portfolio2.liquid')
 })
 
 app.get('/learning-journal', function (request, response) {

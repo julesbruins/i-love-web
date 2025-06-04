@@ -34,7 +34,17 @@ body {
     --border-radius: 1.5rem;
 
     background-color: var(--background-color);
-    
+
+    --gradient:   
+        radial-gradient(
+            48.16% 48.16% at 50% 50%,  /* De positie van het middelpunt van de gradient */
+            #4f3da7 0%, 
+        rgba(104, 81, 194, 0) 100%
+        );  
+    /* --star-1: 
+        position: fixed;
+        background-image: url('/assets/images/star-1.svg');
+        background-repeat: no-repeat; */
 }
 
 h1,
@@ -74,4 +84,54 @@ a {
 
 img {
     border-radius: var(--border-radius);
+}
+
+
+.gradient-ellipse-1 {
+  position: fixed;  
+  width: 753px;
+  height: 753px;
+  left: 2.5rem;
+  bottom: -26rem;  /* Dit plaatst het element op de juiste plek op het scherm */
+  
+  background: var(--gradient);
+  
+  opacity: 0.2;
+  pointer-events: none;  /* Zorgt ervoor dat het element geen muisinteracties blokkeert */
+  z-index: -1;  /* Plaatst het achter andere content */
+}
+
+.gradient-ellipse-2 {
+  position: fixed;  
+  width: 753px;
+  height: 753px;
+  left: -25rem;
+  bottom: -20rem;  /* Dit plaatst het element op de juiste plek op het scherm */
+  
+  background: var(--gradient);
+  
+  opacity: 0.2;
+  pointer-events: none;  /* Zorgt ervoor dat het element geen muisinteracties blokkeert */
+  z-index: -1;  /* Plaatst het achter andere content */
+}
+
+.gradient-ellipse-3 {
+  position: fixed;  
+  width: 753px;
+  height: 753px;
+  right: -10rem;
+  top: -25rem;  /* Dit plaatst het element op de juiste plek op het scherm */
+  
+  background: var(--gradient);
+  
+  opacity: 0.2;
+  pointer-events: none;  /* Zorgt ervoor dat het element geen muisinteracties blokkeert */
+  z-index: -1;  /* Plaatst het achter andere content */
+}
+
+.star-1 {
+        /* top: 1000px;   
+        left: 50px;   
+        width: 1rem;  
+        height: 1rem;    */
 }

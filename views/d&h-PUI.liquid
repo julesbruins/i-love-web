@@ -1,0 +1,66 @@
+{% render 'partials/head.liquid', title: 'portfolio - drop & heal UE' %}
+
+<link rel="stylesheet" href="/styles/bussiness.css">
+
+<div class="gradient-ellipse-1"></div>
+<div class="gradient-ellipse-2"></div>
+<div class="gradient-ellipse-3"></div>
+
+<header>
+    <h1>drop & heal PUI</h1>
+    <p>PUI staat voor pleasurable interface. We hebben bij het maken van deze site veel gelet op progressive enhancement en hieraan een pleasurable laag toevoegen. Ook hebben we in branches gewerkt tijden dit project. Hier vind je onder andere het responsive design van de website, demo's en een live link. Er staat een link naar de Read.me met uitgebreide uitleg over het hele proces van het maken van de website en wat uitblinkt aan de website.</p>
+    <a href="https://pleasurable-ui-jl3a.onrender.com/">link naar live site</a>
+    <a href="https://github.com/MarsGotBars/pleasurable-ui?tab=readme-ov-file#pleasurable-user-interface">link naar read.me documentatie</a>
+</header>
+
+<main>
+    <section class="demos">
+        <h2>demo van de site</h2>
+        
+        <div class="flex-demos">
+            <video controls height="350">
+                <source src="/assets/videos/d&h-video-PUI-MF.mp4" type="video/mp4" />
+            </video>
+            
+            <video controls height="350">
+                <source src="/assets/videos/d&h-video-PUI-L.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </section>
+    
+    <section class="responsive">
+    <h2>responsive ontwerp</h2>
+    
+        <div class="flex-responsive">
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/d&h-PUI-MF.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/d&h-PUI-MF.webp">
+                    <img src="/assets/images/portfolio/d&h-PUI-MF.png" alt="">
+                </picture>
+                <p>small</p>
+            </div>
+
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/d&h-PUI-M.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/d&h-PUI-M.webp">
+                    <img src="/assets/images/portfolio/d&h-PUI-M.png" alt="">
+                    <p>medium</p>
+                </picture>
+            </div>
+
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/d&h-PUI-L.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/d&h-PUI-L.webp">
+                    <img src="/assets/images/portfolio/d&h-PUI-L.png" alt="">
+                </picture>
+                <p>large</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% render 'partials/foot.liquid' %}

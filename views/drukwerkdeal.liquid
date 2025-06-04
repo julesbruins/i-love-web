@@ -1,0 +1,66 @@
+{% render 'partials/head.liquid', title: 'portfolio - drukwerkdeal' %}
+
+<link rel="stylesheet" href="/styles/bussiness.css">
+
+<div class="gradient-ellipse-1"></div>
+<div class="gradient-ellipse-2"></div>
+<div class="gradient-ellipse-3"></div>
+
+<header>
+    <h1>Drukwerkdeal</h1>
+    <p>Hier vind je onder andere het responsive design van de website van drukwerkdeal dat ik ontworpen heb. Er staat een link naar de Read.me met uitgebreide uitleg over het hele proces van het maken van de website en wat uitblinkt aan de website. Ook vind je hier een demo en de live link.</p>
+    <a href="https://julesbruins.github.io/the-startup-responsive-interactive-website/careers.html">link naar live site</a>
+    <a href="https://github.com/julesbruins/the-startup-responsive-interactive-website?tab=readme-ov-file#drukwerkdeal-x-fdnd">link naar read.me documentatie</a>
+</header>
+
+<main>
+    <section class="demos">
+        <h2>demo van de site</h2>
+        
+        <div class="flex-demos">
+            <video controls height="350">
+                <source src="/assets/videos/drukwerkdeal-video-MF.mp4" type="video/mp4" />
+            </video>
+            
+            <video controls height="350">
+                <source src="/assets/videos/drukwerkdeal-video-L.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </section>
+    
+    <section class="responsive">
+    <h2>responsive ontwerp</h2>
+    
+        <div class="flex-responsive">
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/drukwerkdeal-MF.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/drukwerkdeal-MF.webp">
+                    <img src="/assets/images/portfolio/drukwerkdeal-MF.png" alt="">
+                </picture>
+                <p>small</p>
+            </div>
+
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/drukwerkdeal-M.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/drukwerkdeal-M.webp">
+                    <img src="/assets/images/portfolio/drukwerkdeal-M.png" alt="">
+                    <p>medium</p>
+                </picture>
+            </div>
+
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/drukwerkdeal-L.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/drukwerkdeal-L.webp">
+                    <img src="/assets/images/portfolio/drukwerkdeal-L.png" alt="">
+                </picture>
+                <p>large</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% render 'partials/foot.liquid' %}

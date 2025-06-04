@@ -1,0 +1,68 @@
+{% render 'partials/head.liquid', title: 'portfolio - drop & heal UE' %}
+
+<link rel="stylesheet" href="/styles/bussiness.css">
+
+<div class="gradient-ellipse-1"></div>
+<div class="gradient-ellipse-2"></div>
+<div class="gradient-ellipse-3"></div>
+
+<header>
+    <h1>drop & heal UE</h1>
+    <p>Deze site is de een van de eerste sites waarbij gebruik is gemaakt van API's en databases. Data wordt dynamisch gebruikt. Ook wordt er gebruik gemaakt van een POST method. Er staan verschillende links naar Read.me's met uitgebreide uitleggen over het hele proces van het maken van de website en wat uitblinkt aan de website. Op deze pagina vind je onder andere het responsive design van de website en vind je hier een demo en de live link.</p>
+    <a href="https://user-experience-enhanced-website-pvnn.onrender.com/">link naar live site</a>
+    <a href="https://github.com/julesbruins/user-experience-enhanced-website?tab=readme-ov-file#enhanced-website">Read.me #3</a>
+    <a href="https://github.com/julesbruins/the-web-is-for-everyone-interactive-functionality?tab=readme-ov-file#interactive-functionality">Read.me #2</a>
+    <a href="https://github.com/julesbruins/server-side-rendering-server-side-website?tab=readme-ov-file#drop--heal---server-side-rendering">Read.me #1</a>
+</header>
+
+<main>
+    <section class="demos">
+        <h2>demo van de site</h2>
+        
+        <div class="flex-demos">
+            <video controls height="350">
+                <source src="/assets/videos/d&h-video-UE-MF.mp4" type="video/mp4" />
+            </video>
+            
+            <video controls height="350">
+                <source src="/assets/videos/d&h-video-UE-L.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </section>
+
+    <section class="responsive">
+    <h2>responsive ontwerp</h2>
+    
+        <div class="flex-responsive">
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/d&h-UE-MF.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/d&h-UE-MF.webp">
+                    <img src="/assets/images/portfolio/d&h-UE-MF.png" alt="">
+                </picture>
+                <p>small</p>
+            </div>
+
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/d&h-UE-M.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/d&h-UE-M.webp">
+                    <img src="/assets/images/portfolio/d&h-UE-M.png" alt="">
+                    <p>medium</p>
+                </picture>
+            </div>
+
+            <div>
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/d&h-UE-L.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/d&h-UE-L.webp">
+                    <img src="/assets/images/portfolio/d&h-UE-L.png" alt="">
+                </picture>
+                <p>large</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% render 'partials/foot.liquid' %}

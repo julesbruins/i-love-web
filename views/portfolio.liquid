@@ -2,45 +2,76 @@
 
 <link rel="stylesheet" href="./styles/portfolio.css">
 
+{% comment %} <div class="gradient-ellipse-1"></div>
+<div class="gradient-ellipse-2"></div> {% endcomment %}
+<div class="gradient-ellipse-3"></div>
+
 <header>
     <h1>portfolio</h1>
     <p>my work in a timeline</p>
 </header>
-<button class="scroll-btn left">&#8592;</button>
-<button class="scroll-btn right">&#8594;</button>
 
-<main class="horizontal-scroll">
-  <article>
-    <h2>dda agency 1</h2>
-    <iframe src="https://user-experience-enhanced-website-pvnn.onrender.com/" frameborder="1"></iframe>
-    <p>jan '25 - dec '26</p>
-    <img src="https://via.placeholder.com/300x150" alt="Image 1" />
-  </article>
-  <article>
-    <h2>dda agency 2</h2>
-    <p>jan '25 - dec '26</p>
-    <img src="https://via.placeholder.com/300x150" alt="Image 2" />
-  </article>
-  <article>
-    <h2>dda agency 3</h2>
-    <p>jan '25 - dec '26</p>
-    <img src="https://via.placeholder.com/300x150" alt="Image 3" />
-  </article>
-  <article>
-    <h2>dda agency 4</h2>
-    <p>jan '25 - dec '26</p>
-    <img src="https://via.placeholder.com/300x150" alt="Image 4" />
-  </article>
-  <article>
-    <h2>dda agency 5</h2>
-    <p>jan '25 - dec '26</p>
-    <img src="https://via.placeholder.com/300x150" alt="Image 5" />
-  </article>
-</main>
+<section>
+    <ul>
+        <li>
+            <div class="text">
+                <h2>drop & heal (PUI)</h2>
+                <p>12/05/2025 - 30/05/2025</p>
+            </div>
+            <a href="/portfolio/drop-heal-PUI">
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/d&h-PUI-M.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/d&h-PUI-M.webp">
+                    <img src="/assets/images/portfolio/d&h-PUI-M.png" alt="" height="1506" width="1758"/>
+                </picture>
+            </a>
+            <a href="">read all about it</a>
+        </li>
+        <li>
+            <div class="text">
+                <h2>drop & heal</h2>
+                <p>03/03/2025 - 09/05/2025</p>
+            </div>
+            <a href="/portfolio/drop-heal-UE">
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/d&h-UE-M.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/d&h-UE-M.webp">
+                    <img src="/assets/images/portfolio/d&h-UE-M.png" alt="" height="1504" width="1760"/>
+                </picture>
+            </a>
+            <a href="">read all about it</a>
+        </li>
+        <li>
+            <div class="text">
+                <h2>drukwerkdeal</h2>
+                <p>06/01/2025 - 24/01/2025</p>
+            </div>
+            <a href="/portfolio/drukwerkdeal">
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/drukwerkdeal-M.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/drukwerkdeal-M.webp">
+                    <img src="/assets/images/portfolio/drukwerkdeal-M.png" alt="" height="1506" width="1760"/>
+                </picture>
+            </a>
+            <a href="">read all about it</a>
+        </li>
+        <li>
+            <div class="text">
+                <h2>dda agency</h2>
+                <p>06/01/2025 - 24/01/2025</p>
+            </div>
+            <a href="/portfolio/dda-agency">
+                <picture>
+                    <source type="image/avif" src="/assets/images/portfolio/dda-home-M.avif">
+                    <source type="image/webp" src="/assets/images/portfolio/dda-home-M.webp">
+                    <img src="/assets/images/portfolio/dda-home-M.png" alt="" height="1506" width="1762"/>
+                </picture>
+            </a>
+            <a href="">read all about it</a>
+        </li>    
+</ul>
+</section>
 
 
-    
-    
-<script src="./scripts/portfolio.js"></script>
 
 {% render 'partials/foot.liquid' %}
